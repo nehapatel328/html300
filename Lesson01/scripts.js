@@ -1,4 +1,4 @@
-//Name: Hello alert
+//Name: Says hello 
 $(function() {
   $("#name-submit").click(function() {
     //string interpolation
@@ -9,13 +9,12 @@ $(function() {
 
 //Email: contains @
 $(function() {
-  //Names button and click event
   $(".email-submit").click(function() {
     alert(`Email is ${$(this).siblings().val().includes("@")`});
   })
 });
 
-//Zipcode: >1000
+//Zipcode: is >1000
 $(function() {
   $(".zipcode-submit").click(function() {
     zipcode = $(".zipcode-submit");
