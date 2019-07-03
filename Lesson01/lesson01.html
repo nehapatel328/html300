@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lesson01</title>
+
+  <!-- jQuery CDN -->
+  <script>
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+  </script>
+
+  <!-- Script and Styles -->
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+      <h1>Using ES6+ Methods</h1>
+        <form name="form" method="post" onsubmit="return validateForm()">
+          <label>Name
+            <input type="text" name="name" id="name">
+          </label>
+
+          <label>Email
+            <input type="email" id="checkoutEmail" onclick="emailValid(email)" name="email">
+          </label>
+
+          <label>Address
+            <input type="text" name="address" id="address">
+          </label>
+
+          <label>City
+            <input type="text" name="city" id="city">
+          </label>
+        </form>
+    </main>
+</body>
+
+</html>
