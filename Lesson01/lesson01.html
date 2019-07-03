@@ -7,11 +7,7 @@
   <title>Lesson01</title>
 
   <!-- jQuery CDN -->
-  <script>
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous">
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- Script and Styles -->
   <script src="scripts.js"></script>
@@ -19,7 +15,7 @@
 </head>
 
 <body>
-  <form name="form" method="post" onsubmit="return validateForm()">
+  <form name="form" method="post">
     <h1>Using ES6+ Methods</h1>
         <label>Name
           <!-- Input -->
@@ -30,9 +26,9 @@
 
         <label>Email
           <!-- Input -->
-          <input type="email" class="input" onclick="emailValid(email)" name="email">
+          <input type="email" class="email" name="email">
           <!-- Submit for Input -->
-          <input class="submit" type="submit"></input>
+          <input type="submit" class="email-submit"></input>
         </label>
 
         <label>Address

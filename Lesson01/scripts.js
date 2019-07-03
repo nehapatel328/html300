@@ -1,14 +1,16 @@
-$(document).ready(function() {
-$("#submit").click(function(event) {
-console.log($("#name"));
-alert($("#name").val());
-});
+//Name
+$(function() {
+  $("#name-submit").click(function() {
+    //string interpolation
+    alert(`Hello, ${$(this).siblings().val()}. Nice to meet you.`);
+  })
 });
 
+
+//Email: contains @
 $(function() {
   //Names button and click event
-  $("#name-submit").click(function() {
-    //Takes input value, uses string interpolation, and alerts a greeting
-    alert(`Hello, ${$(this).siblings().val()}. Nice to meet you.`);
+  $(".email-submit").click(function() {
+    alert(`Email is ${$(this).siblings().val().includes("@")`});
   })
 });
