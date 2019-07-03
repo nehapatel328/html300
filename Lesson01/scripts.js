@@ -1,4 +1,4 @@
-//Name
+//Name: Hello alert
 $(function() {
   $("#name-submit").click(function() {
     //string interpolation
@@ -15,11 +15,10 @@ $(function() {
   })
 });
 
+//Zipcode: >1000
 $(function() {
-  //Names button and click event
-
   $(".zipcode-submit").click(function() {
-    zipcode = $(".zipcode");
+    zipcode = $(".zipcode-submit");
     const number = zipcode.val();
     const result = array1.filter(number.length > 1000);
     //Alerts words found
