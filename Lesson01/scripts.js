@@ -27,3 +27,13 @@ $(function() {
 
   })
 });
+
+//City
+$(function() {
+  $(".city-submit").click(function() {
+    city = [];
+    city.forEach(function(value, key)) {
+      alert("You are from" + key);
+    }
+  })
+});
