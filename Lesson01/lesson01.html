@@ -15,30 +15,40 @@
 
   <!-- Script and Styles -->
   <script src="scripts.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <main class="main">
-      <h1>Using ES6+ Methods</h1>
-        <form name="form" method="post" onsubmit="return validateForm()">
-          <label>Name
-            <input type="text" name="name" id="name">
-          </label>
+  <form name="form" method="post" onsubmit="return validateForm()">
+    <h1>Using ES6+ Methods</h1>
+        <label>Name
+          <!-- Input -->
+          <input type="text" id="name" name="name">
+          <!-- Submit for Input -->
+          <input type="submit" id="name-submit"></input>
+        </label>
 
-          <label>Email
-            <input type="email" id="checkoutEmail" onclick="emailValid(email)" name="email">
-          </label>
+        <label>Email
+          <!-- Input -->
+          <input type="email" class="input" onclick="emailValid(email)" name="email">
+          <!-- Submit for Input -->
+          <input class="submit" type="submit"></input>
+        </label>
 
-          <label>Address
-            <input type="text" name="address" id="address">
-          </label>
+        <label>Address
+          <!-- Input -->
+          <input type="text" class="input" name="address">
+          <!-- Submit for Input -->
+          <input class="submit" type="submit"></input>
+        </label>
 
-          <label>City
-            <input type="text" name="city" id="city">
-          </label>
-        </form>
-    </main>
+        <label>City
+          <!-- Input -->
+          <input type="text" name="city" id="city">
+          <!-- Submit for Input -->
+          <input class="submit" type="submit"></input>
+        </label>
+  </form>
 </body>
 
 </html>
